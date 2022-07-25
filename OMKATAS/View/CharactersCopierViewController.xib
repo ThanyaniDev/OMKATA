@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharactersCopierViewController" customModule="OMKATAS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="uwO-BG-Ovf" id="IvN-cm-iCV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="uwO-BG-Ovf">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XOT-Um-4Tp">
+                    <rect key="frame" x="20" y="60" width="374" height="738.5"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2R5-4W-8AN">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="235.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ5-sA-clR">
+                            <rect key="frame" x="0.0" y="251.5" width="374" height="235.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="jG2-Va-LTT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWL-q6-W4v">
+                            <rect key="frame" x="0.0" y="503" width="374" height="235.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vk3-K0-Zo7">
+                                    <rect key="frame" x="20" y="32" width="334" height="31"/>
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                    </buttonConfiguration>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="vk3-K0-Zo7" secondAttribute="bottom" constant="48" id="Pg4-Rd-vJe"/>
+                                <constraint firstAttribute="trailing" secondItem="vk3-K0-Zo7" secondAttribute="trailing" constant="20" id="Sgw-SQ-eE5"/>
+                                <constraint firstItem="vk3-K0-Zo7" firstAttribute="leading" secondItem="zWL-q6-W4v" secondAttribute="leading" constant="20" id="VxY-9d-OH2"/>
+                                <constraint firstItem="vk3-K0-Zo7" firstAttribute="top" secondItem="zWL-q6-W4v" secondAttribute="top" constant="32" id="dQk-Uf-AvI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Elj-Xr-K9A"/>
+            <color key="backgroundColor" systemColor="systemGrayColor"/>
+            <constraints>
+                <constraint firstItem="Elj-Xr-K9A" firstAttribute="trailing" secondItem="XOT-Um-4Tp" secondAttribute="trailing" constant="20" id="KsH-nt-22e"/>
+                <constraint firstItem="XOT-Um-4Tp" firstAttribute="top" secondItem="Elj-Xr-K9A" secondAttribute="top" constant="16" id="TOE-dK-cUz"/>
+                <constraint firstItem="XOT-Um-4Tp" firstAttribute="leading" secondItem="Elj-Xr-K9A" secondAttribute="leading" constant="20" id="UP2-K2-ETc"/>
+                <constraint firstItem="Elj-Xr-K9A" firstAttribute="bottom" secondItem="XOT-Um-4Tp" secondAttribute="bottom" constant="64" id="j1k-N2-FIm"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

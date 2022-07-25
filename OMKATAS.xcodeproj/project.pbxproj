@@ -7,23 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC1ACBAE7E26B65042FE181 /* Pods_OMKATAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E9B1F224BB8E345C66A2F2 /* Pods_OMKATAS.framework */; };
+		3E1FA94C79D07C2FC57C3695 /* Pods_OMKATASTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E55BAE66680B58FF25B49C /* Pods_OMKATASTests.framework */; };
 		F714CADB288C4DA5007EABB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714CADA288C4DA5007EABB8 /* AppDelegate.swift */; };
 		F714CADD288C4DA5007EABB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714CADC288C4DA5007EABB8 /* SceneDelegate.swift */; };
-		F714CADF288C4DA5007EABB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714CADE288C4DA5007EABB8 /* ViewController.swift */; };
-		F714CAE2288C4DA5007EABB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F714CAE0288C4DA5007EABB8 /* Main.storyboard */; };
 		F714CAE4288C4DA9007EABB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F714CAE3288C4DA9007EABB8 /* Assets.xcassets */; };
-		F714CAE7288C4DA9007EABB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F714CAE5288C4DA9007EABB8 /* LaunchScreen.storyboard */; };
+		F714CAEF288CBF55007EABB8 /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714CAEE288CBF55007EABB8 /* DIManager.swift */; };
+		F714CB03288CC85E007EABB8 /* Copier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714CB02288CC85E007EABB8 /* Copier.swift */; };
+		F714CB05288CC907007EABB8 /* ISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714CB04288CC907007EABB8 /* ISource.swift */; };
+		F714CB07288CC912007EABB8 /* IDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F714CB06288CC912007EABB8 /* IDestination.swift */; };
+		F72947F9288EA801005AEFFE /* MockISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72947F8288EA801005AEFFE /* MockISource.swift */; };
+		F72947FC288EA95D005AEFFE /* Strings+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72947FB288EA95D005AEFFE /* Strings+Extentions.swift */; };
+		F7B07E53288E4F4D0073D661 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B07E52288E4F4D0073D661 /* GeneratedMocks.swift */; };
+		F7F665FF288DBEAA0065943B /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F665FE288DBEAA0065943B /* Dependencies.swift */; };
+		F7F66601288DC0B00065943B /* CharactersCopierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F66600288DC0B00065943B /* CharactersCopierViewModel.swift */; };
+		F7F66603288DC0C10065943B /* CharactersCopierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F66602288DC0C10065943B /* CharactersCopierView.swift */; };
+		F7F66606288DC0FE0065943B /* CharactersCopierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F66604288DC0FE0065943B /* CharactersCopierViewController.swift */; };
+		F7F66607288DC0FE0065943B /* CharactersCopierViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F66605288DC0FE0065943B /* CharactersCopierViewController.xib */; };
+		F7F6660E288DDA710065943B /* CopierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6660D288DDA710065943B /* CopierTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F714CAF8288CC3E3007EABB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F714CACF288C4DA5007EABB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F714CAD6288C4DA5007EABB8;
+			remoteInfo = OMKATAS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		16E9B1F224BB8E345C66A2F2 /* Pods_OMKATAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMKATAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E55BAE66680B58FF25B49C /* Pods_OMKATASTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMKATASTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4204ED90D510026A2A318B3 /* Pods-OMKATASTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMKATASTests.release.xcconfig"; path = "Target Support Files/Pods-OMKATASTests/Pods-OMKATASTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC1F6911AE916254D0E1B1F7 /* Pods-OMKATAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMKATAS.debug.xcconfig"; path = "Target Support Files/Pods-OMKATAS/Pods-OMKATAS.debug.xcconfig"; sourceTree = "<group>"; };
+		C420A7F8F8C9AE8F02FF6B08 /* Pods-OMKATASTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMKATASTests.debug.xcconfig"; path = "Target Support Files/Pods-OMKATASTests/Pods-OMKATASTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E729E94D604A7840E3A01FC4 /* Pods-OMKATAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMKATAS.release.xcconfig"; path = "Target Support Files/Pods-OMKATAS/Pods-OMKATAS.release.xcconfig"; sourceTree = "<group>"; };
 		F714CAD7288C4DA5007EABB8 /* OMKATAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMKATAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F714CADA288C4DA5007EABB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F714CADC288C4DA5007EABB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F714CADE288C4DA5007EABB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F714CAE1288C4DA5007EABB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F714CAE3288C4DA9007EABB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F714CAE6288C4DA9007EABB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F714CAE8288C4DA9007EABB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F714CAEE288CBF55007EABB8 /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
+		F714CAF4288CC3E3007EABB8 /* OMKATASTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMKATASTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F714CAFF288CC4B2007EABB8 /* Cuckoo.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Cuckoo.sh; sourceTree = "<group>"; };
+		F714CB02288CC85E007EABB8 /* Copier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Copier.swift; sourceTree = "<group>"; };
+		F714CB04288CC907007EABB8 /* ISource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISource.swift; sourceTree = "<group>"; };
+		F714CB06288CC912007EABB8 /* IDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDestination.swift; sourceTree = "<group>"; };
+		F72947F8288EA801005AEFFE /* MockISource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockISource.swift; sourceTree = "<group>"; };
+		F72947FB288EA95D005AEFFE /* Strings+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extentions.swift"; sourceTree = "<group>"; };
+		F7B07E52288E4F4D0073D661 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		F7F665FE288DBEAA0065943B /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		F7F66600288DC0B00065943B /* CharactersCopierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCopierViewModel.swift; sourceTree = "<group>"; };
+		F7F66602288DC0C10065943B /* CharactersCopierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCopierView.swift; sourceTree = "<group>"; };
+		F7F66604288DC0FE0065943B /* CharactersCopierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCopierViewController.swift; sourceTree = "<group>"; };
+		F7F66605288DC0FE0065943B /* CharactersCopierViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersCopierViewController.xib; sourceTree = "<group>"; };
+		F7F6660D288DDA710065943B /* CopierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopierTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +71,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC1ACBAE7E26B65042FE181 /* Pods_OMKATAS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F714CAF1288CC3E3007EABB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1FA94C79D07C2FC57C3695 /* Pods_OMKATASTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015B0E8BB491F3E66A7BC4F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F6911AE916254D0E1B1F7 /* Pods-OMKATAS.debug.xcconfig */,
+				E729E94D604A7840E3A01FC4 /* Pods-OMKATAS.release.xcconfig */,
+				C420A7F8F8C9AE8F02FF6B08 /* Pods-OMKATASTests.debug.xcconfig */,
+				A4204ED90D510026A2A318B3 /* Pods-OMKATASTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D56EE28D21D0DD3725A563F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16E9B1F224BB8E345C66A2F2 /* Pods_OMKATAS.framework */,
+				67E55BAE66680B58FF25B49C /* Pods_OMKATASTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F714CACE288C4DA5007EABB8 = {
 			isa = PBXGroup;
 			children = (
 				F714CAD9288C4DA5007EABB8 /* OMKATAS */,
+				F714CAF5288CC3E3007EABB8 /* OMKATASTests */,
 				F714CAD8288C4DA5007EABB8 /* Products */,
+				015B0E8BB491F3E66A7BC4F2 /* Pods */,
+				D56EE28D21D0DD3725A563F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				F714CAD7288C4DA5007EABB8 /* OMKATAS.app */,
+				F714CAF4288CC3E3007EABB8 /* OMKATASTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +129,73 @@
 		F714CAD9288C4DA5007EABB8 /* OMKATAS */ = {
 			isa = PBXGroup;
 			children = (
+				F72947F7288E5A1A005AEFFE /* Classes */,
+				F7F6660C288DD5850065943B /* ViewModel */,
+				F7F6660B288DD5780065943B /* View */,
+				F7F6660A288DD5450065943B /* Utils */,
+				F714CAE3288C4DA9007EABB8 /* Assets.xcassets */,
+				F714CAE8288C4DA9007EABB8 /* Info.plist */,
 				F714CADA288C4DA5007EABB8 /* AppDelegate.swift */,
 				F714CADC288C4DA5007EABB8 /* SceneDelegate.swift */,
-				F714CADE288C4DA5007EABB8 /* ViewController.swift */,
-				F714CAE0288C4DA5007EABB8 /* Main.storyboard */,
-				F714CAE3288C4DA9007EABB8 /* Assets.xcassets */,
-				F714CAE5288C4DA9007EABB8 /* LaunchScreen.storyboard */,
-				F714CAE8288C4DA9007EABB8 /* Info.plist */,
 			);
 			path = OMKATAS;
+			sourceTree = "<group>";
+		};
+		F714CAF5288CC3E3007EABB8 /* OMKATASTests */ = {
+			isa = PBXGroup;
+			children = (
+				F72947F8288EA801005AEFFE /* MockISource.swift */,
+				F714CB01288CC52D007EABB8 /* Mocks */,
+				F714CAFF288CC4B2007EABB8 /* Cuckoo.sh */,
+				F7F6660D288DDA710065943B /* CopierTests.swift */,
+			);
+			path = OMKATASTests;
+			sourceTree = "<group>";
+		};
+		F714CB01288CC52D007EABB8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B07E52288E4F4D0073D661 /* GeneratedMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F72947F7288E5A1A005AEFFE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F714CB02288CC85E007EABB8 /* Copier.swift */,
+				F714CB04288CC907007EABB8 /* ISource.swift */,
+				F714CB06288CC912007EABB8 /* IDestination.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F7F6660A288DD5450065943B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F714CAEE288CBF55007EABB8 /* DIManager.swift */,
+				F7F665FE288DBEAA0065943B /* Dependencies.swift */,
+				F72947FB288EA95D005AEFFE /* Strings+Extentions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F7F6660B288DD5780065943B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7F66602288DC0C10065943B /* CharactersCopierView.swift */,
+				F7F66604288DC0FE0065943B /* CharactersCopierViewController.swift */,
+				F7F66605288DC0FE0065943B /* CharactersCopierViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7F6660C288DD5850065943B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7F66600288DC0B00065943B /* CharactersCopierViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F714CAEB288C4DA9007EABB8 /* Build configuration list for PBXNativeTarget "OMKATAS" */;
 			buildPhases = (
+				A3D7A52F547190B7A39B6956 /* [CP] Check Pods Manifest.lock */,
 				F714CAD3288C4DA5007EABB8 /* Sources */,
 				F714CAD4288C4DA5007EABB8 /* Frameworks */,
 				F714CAD5288C4DA5007EABB8 /* Resources */,
@@ -87,6 +219,27 @@
 			productReference = F714CAD7288C4DA5007EABB8 /* OMKATAS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F714CAF3288CC3E3007EABB8 /* OMKATASTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F714CAFA288CC3E3007EABB8 /* Build configuration list for PBXNativeTarget "OMKATASTests" */;
+			buildPhases = (
+				53ACD3F73E0672541AC7EE1B /* [CP] Check Pods Manifest.lock */,
+				F714CAFD288CC3F6007EABB8 /* Run Cuckoo */,
+				F714CAF0288CC3E3007EABB8 /* Sources */,
+				F714CAF1288CC3E3007EABB8 /* Frameworks */,
+				F714CAF2288CC3E3007EABB8 /* Resources */,
+				5942265208C899EAC8355C87 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F714CAF9288CC3E3007EABB8 /* PBXTargetDependency */,
+			);
+			name = OMKATASTests;
+			productName = OMKATASTests;
+			productReference = F714CAF4288CC3E3007EABB8 /* OMKATASTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +252,11 @@
 				TargetAttributes = {
 					F714CAD6288C4DA5007EABB8 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					F714CAF3288CC3E3007EABB8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+						TestTargetID = F714CAD6288C4DA5007EABB8;
 					};
 				};
 			};
@@ -116,6 +274,7 @@
 			projectRoot = "";
 			targets = (
 				F714CAD6288C4DA5007EABB8 /* OMKATAS */,
+				F714CAF3288CC3E3007EABB8 /* OMKATASTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,45 +284,140 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F714CAE7288C4DA9007EABB8 /* LaunchScreen.storyboard in Resources */,
+				F7F66607288DC0FE0065943B /* CharactersCopierViewController.xib in Resources */,
 				F714CAE4288C4DA9007EABB8 /* Assets.xcassets in Resources */,
-				F714CAE2288C4DA5007EABB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F714CAF2288CC3E3007EABB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53ACD3F73E0672541AC7EE1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OMKATASTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5942265208C899EAC8355C87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMKATASTests/Pods-OMKATASTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMKATASTests/Pods-OMKATASTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OMKATASTests/Pods-OMKATASTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D7A52F547190B7A39B6956 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OMKATAS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F714CAFD288CC3F6007EABB8 /* Run Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Cuckoo";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/OMKATASTests/Cuckoo.sh\n# $PODS_ROOT/Sourcery/bin/sourcery\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F714CAD3288C4DA5007EABB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F714CADF288C4DA5007EABB8 /* ViewController.swift in Sources */,
+				F7F66601288DC0B00065943B /* CharactersCopierViewModel.swift in Sources */,
+				F7F66606288DC0FE0065943B /* CharactersCopierViewController.swift in Sources */,
+				F714CB03288CC85E007EABB8 /* Copier.swift in Sources */,
+				F7F66603288DC0C10065943B /* CharactersCopierView.swift in Sources */,
+				F72947FC288EA95D005AEFFE /* Strings+Extentions.swift in Sources */,
+				F714CB07288CC912007EABB8 /* IDestination.swift in Sources */,
 				F714CADB288C4DA5007EABB8 /* AppDelegate.swift in Sources */,
+				F7F665FF288DBEAA0065943B /* Dependencies.swift in Sources */,
+				F714CAEF288CBF55007EABB8 /* DIManager.swift in Sources */,
+				F714CB05288CC907007EABB8 /* ISource.swift in Sources */,
 				F714CADD288C4DA5007EABB8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F714CAF0288CC3E3007EABB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F6660E288DDA710065943B /* CopierTests.swift in Sources */,
+				F7B07E53288E4F4D0073D661 /* GeneratedMocks.swift in Sources */,
+				F72947F9288EA801005AEFFE /* MockISource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		F714CAE0288C4DA5007EABB8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F714CAE1288C4DA5007EABB8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		F714CAF9288CC3E3007EABB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F714CAD6288C4DA5007EABB8 /* OMKATAS */;
+			targetProxy = F714CAF8288CC3E3007EABB8 /* PBXContainerItemProxy */;
 		};
-		F714CAE5288C4DA9007EABB8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F714CAE6288C4DA9007EABB8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F714CAE9288C4DA9007EABB8 /* Debug */ = {
@@ -282,6 +536,7 @@
 		};
 		F714CAEC288C4DA9007EABB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC1F6911AE916254D0E1B1F7 /* Pods-OMKATAS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,9 +544,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OMKATAS/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = CharactersCopierViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +563,7 @@
 		};
 		F714CAED288C4DA9007EABB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E729E94D604A7840E3A01FC4 /* Pods-OMKATAS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,9 +571,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OMKATAS/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = CharactersCopierViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,6 +585,55 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F714CAFB288CC3E3007EABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C420A7F8F8C9AE8F02FF6B08 /* Pods-OMKATASTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanyaniRonny.OMKATASTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMKATAS.app/OMKATAS";
+			};
+			name = Debug;
+		};
+		F714CAFC288CC3E3007EABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4204ED90D510026A2A318B3 /* Pods-OMKATASTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanyaniRonny.OMKATASTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMKATAS.app/OMKATAS";
 			};
 			name = Release;
 		};
@@ -351,6 +654,15 @@
 			buildConfigurations = (
 				F714CAEC288C4DA9007EABB8 /* Debug */,
 				F714CAED288C4DA9007EABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F714CAFA288CC3E3007EABB8 /* Build configuration list for PBXNativeTarget "OMKATASTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F714CAFB288CC3E3007EABB8 /* Debug */,
+				F714CAFC288CC3E3007EABB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
